@@ -23,10 +23,20 @@ class Workout {
   }
 }
 //Running class //////////////////////////////////////////////////////////////
-class Running extends Workout {}
+class Running extends Workout {
+  constructor(coords, distance, duration, cadence) {
+    super(coords, distance, duration);
+    this.cadence = cadence;
+  }
+}
 
 //Cycling class //////////////////////////////////////////////////////////////
-class Cycling extends Workout {}
+class Cycling extends Workout {
+  constructor(coords, distance, duration, elevationGain) {
+    super(coords, distance, duration);
+    this.elevationGain = elevationGain;
+  }
+}
 
 //App class //////////////////////////////////////////////////////////////////
 class App {
