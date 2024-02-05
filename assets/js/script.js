@@ -11,7 +11,7 @@ const inputDuration = document.querySelector(".form__input--duration");
 const inputCadence = document.querySelector(".form__input--cadence");
 const inputElevation = document.querySelector(".form__input--elevation");
 
-//Workout class //////////////////////////////////////////////////////////////////
+//Workout class //////////////////////////////////////////////////////////////
 class Workout {
   date = new Date();
   id = (new Date() + "").slice(-10);
@@ -22,6 +22,12 @@ class Workout {
     this.duration = duration;
   }
 }
+//Running class //////////////////////////////////////////////////////////////
+class Running extends Workout {}
+
+//Cycling class //////////////////////////////////////////////////////////////
+class Cycling extends Workout {}
+
 //App class //////////////////////////////////////////////////////////////////
 class App {
   #map;
