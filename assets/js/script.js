@@ -121,10 +121,14 @@ class App {
   //////// _hideForm
   /////////////////////////////////////////////
   _hideForm() {
-    inputDistance.value = "";
-    inputDuration.value = "";
-    inputCadence.value = "";
-    inputElevation.value = "";
+    //prettier-ignore
+    inputDistance.value = '';
+    //prettier-ignore
+    inputDuration.value = '';
+    //prettier-ignore
+    inputCadence.value = '';
+    //prettier-ignore
+    inputElevation.value = '';
     form.style.display = "none";
     form.classList.add("hidden");
     setTimeout(() => {
